@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -20px 36px -28px inset;
+  padding: 1rem 2rem;
+  //   margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  &-heading {
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: #fc0 1px 0 10px;
+  }
+  &-right {
+    display: flex;
+    .signIn {
+      margin-right: 10px;
+      color: red;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+}

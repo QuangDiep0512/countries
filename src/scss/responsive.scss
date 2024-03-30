@@ -1,0 +1,30 @@
+$DESKTOP: "DESKTOP";
+$MEDIUM_DEVICE: "MEDIUM_DEVICE";
+$TABLET_DEVICE: "TABLET_DEVICE";
+$MOBILE: "MOBILE";
+
+@mixin Reponsive($canvas) {
+  @if $canvas == $DESKTOP {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $canvas == $MEDIUM_DEVICE {
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  }
+
+  @if $canvas == $TABLET_DEVICE {
+    @media only screen and (max-width: 991px) {
+      @content;
+    }
+  }
+
+  @if $canvas == $MOBILE {
+    @media only screen and (max-width: 575px) {
+      @content;
+    }
+  }
+}

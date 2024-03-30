@@ -1,0 +1,42 @@
+@import "../../../scss/variable";
+.toggle {
+    width: 55px;
+    height: 28px;
+    background-color: $color-blue;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.5px;
+    box-shadow:
+        rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+        rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+    &-input--check {
+        width: 0;
+        height: 0;
+        opacity: 0;
+        &:checked ~ .toggle-icon {
+            transform: translateX(25px);
+        }
+
+        &:checked ~ .toggle-circle {
+            transform: translateX(-25px);
+        }
+    }
+
+    &-icon {
+        height: 100%;
+        font-size: 18px;
+        color: $color-yellow;
+        transition: all 0.3s ease;
+    }
+
+    &-circle {
+        width: 25px;
+        height: 24px;
+        background-color: $color-white;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+}

@@ -1,0 +1,29 @@
+.detail {
+  width: 600px;
+  margin: 30px auto;
+  button {
+    padding: 5px;
+  }
+  .countryDetail {
+    margin: 20px 0;
+    display: flex;
+    img {
+      width: 300px;
+    }
+    .info {
+      margin-left: 30px;
+      ul {
+        margin: 20px 0;
+        display: flex;
+        list-style-type: none;
+        width: 350px;
+        li:first-child {
+          width: 150px;
+        }
+        li:nth-child(2) {
+          width: 20px;
+        }
+      }
+    }
+  }
+}
